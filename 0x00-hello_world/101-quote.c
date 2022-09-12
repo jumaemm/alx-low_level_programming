@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <unistd.h>
 
 /**
@@ -9,6 +8,6 @@ int main(void)
 {
 	char dora[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(2, dora, sizeof(dora));
+	write(2, dora, 59);
 	return (1);
 }
