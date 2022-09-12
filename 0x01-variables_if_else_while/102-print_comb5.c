@@ -7,7 +7,8 @@
 int main(void)
 {
 	int i, j, k, l;
-
+	
+	/*0 = 48, 9 = 57*/
 	for (i = 48; i <= 57; i++)
 	{
 		for (j = 48; j <= 57; j++)
@@ -23,7 +24,7 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(l);
-
+					/*9 + 8 + 9 + 9*/
 					if (i + j + k + l == 227 && i == 57)
 					{
 						break;
