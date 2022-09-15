@@ -2,7 +2,7 @@
 
 /**
  * print_square - print a square of #
- * @n - size of quare side
+ * @n: size of quare side
  * Return: null
  */
 void print_square(int n)
