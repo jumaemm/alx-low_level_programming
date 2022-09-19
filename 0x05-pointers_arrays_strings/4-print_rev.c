@@ -11,9 +11,9 @@ void print_rev(char *s)
 	int size;
 
 	/* find length of the string first*/
-	size = _strlen(*s);
+	size = _strlen(s);
 
-	/* iterate reversely over the string */
+	/* reverse - iterate over the string */
 	for (i = size - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
