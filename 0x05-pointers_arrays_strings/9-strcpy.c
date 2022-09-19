@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * *_strcopy - copy string from src to destination
+ * *_strcpy - copy string from src to destination
  * @src: source string
  * @dest: destination string
  * Return: Destination string
  */
-char *_strcopy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i, size;
 
