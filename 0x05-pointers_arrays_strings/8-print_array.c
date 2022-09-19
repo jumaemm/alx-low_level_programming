@@ -7,7 +7,7 @@
  * @n: number of chars
  * Return: Always 0
  */
-void print_array(char *a, int n)
+void print_array(int *a, int n)
 {
 	int i;
 
