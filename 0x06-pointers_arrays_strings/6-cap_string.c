@@ -1,11 +1,11 @@
-#include "main.h";
+#include "main.h"
 
 /**
  * *cap_string - Capitalize all letters in string
  * @s: String to be upcased
  * Return: Uppercase string
  */
-int *cap_string(char *s)
+char *cap_string(char *s)
 {
 	int i = 1;
 	int j, seperator_check;
