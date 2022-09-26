@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - print sum of two diagonals of matrix
@@ -15,5 +16,5 @@ void print_diagsums(int *a, int size)
 		sum_left += a[i];
 		sum_right += a[j];
 	}
-	printf("%d, %d", sum_left, sum_right);
+	printf("%d, %d\n", sum_left, sum_right);
 }
