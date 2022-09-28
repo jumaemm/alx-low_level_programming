@@ -9,7 +9,11 @@
  */
 int prime_helper(int x, int y)
 {
-	if (y <= 1)
+	if (y <= 0)
+	{
+		return (0);
+	}
+	if (y == 1)
 	{
 		return (1);
 	}
