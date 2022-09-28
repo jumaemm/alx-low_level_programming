@@ -39,6 +39,8 @@ int palindrome_helper(char *s, int l)
  */
 int is_palindrome(char *s)
 {
+	int input_length;
+
 	input_length = strlen_recursion(s);
 	return (palindrome_helper(s, input_length));
 }
