@@ -12,12 +12,17 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i = 0, j = 0, k = 0;
 	char *s3;
 
-	while (s1[i] != '\0')
-		i++;
+	if (s1 != NULL)
+	{
+		while (s1[i] != '\0')
+			i++;
+	}
 
-	while (s2[j] != '\0')
-		j++;
-
+	if (s2 != NULL)
+	{
+		while (s2[j] != '\0')
+			j++;
+	}
 	s3 = malloc(sizeof(char) * (i + j + 1));
 
 	if (s3 == 0)
