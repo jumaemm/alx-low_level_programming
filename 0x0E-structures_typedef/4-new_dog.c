@@ -1,5 +1,35 @@
 #include "dog.h"
+#include <stdlib.h>
+/**
+ * _strdup - duplicate string
+ * @str: input string
+ * Return: pointer to string
+ */
+char *_strdup(char *str)
+{
+	int i, len;
+	char *s;
 
+	if (str == NULL)
+	{
+		return (0);
+	}
+
+	len = 0;
+	while (*(str + len))
+		len++;
+
+	s = malloc(sizeof(char) * l + 1);
+	if (s == 0)
+	{
+		return (0);
+	}
+	for (i = 0; i <= len; i++)
+	{
+		*(s + i) = *(str + i);
+	}
+	return (s);
+}
 /**
  * *new_dog - creates a new dog object
  * @name: name of the dog
