@@ -42,7 +42,7 @@ void print_s(va_list s)
 
 	if (str == NULL)
 	{
-		printf("(nil)");
+		str = "(nil)";
 	}
 	printf("%s", str);
 }
@@ -81,6 +81,6 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	printf("\n");
 	va_end(ap);
+	printf("\n");
 }
