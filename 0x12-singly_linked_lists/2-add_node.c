@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * add-node - add a node to a singly linked list
+ * add_node - add a node to a singly linked list
  * @head: head of a singly linked list
  * @str: value of new nnode
  * Return: address of new element or null
