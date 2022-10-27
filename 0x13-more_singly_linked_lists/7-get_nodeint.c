@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint - get the node at a given index
+ * get_nodeint_at_index - get the node at a given index
  * @head: head of linked list
  * @index: index of the given node
  * Return: NULL or node at index
