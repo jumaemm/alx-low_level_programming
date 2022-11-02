@@ -38,7 +38,7 @@ void cp(char *src, char *dest)
 	{
 		error_handler(98, src);
 	}
-	fd_dest = open(dest, O_CREAT | O_RDONLY | O_TRUNC, 0644);
+	fd_dest = open(dest, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_dest == -1)
 	{
 		close(fd);
@@ -52,7 +52,10 @@ void cp(char *src, char *dest)
 		}
 		wr = write(fd_dest, buff, rd);
 		if (wr == -1)
+		{
+			printf("In here\n");
 			error_handler(99, dest);
+		}
 	} while (wr == 1024);
 	cl = close(fd);
 	if (cl == -1)
