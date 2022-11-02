@@ -53,7 +53,6 @@ void cp(char *src, char *dest)
 		wr = write(fd_dest, buff, rd);
 		if (wr == -1)
 		{
-			printf("In here\n");
 			error_handler(99, dest);
 		}
 	} while (wr == 1024);
